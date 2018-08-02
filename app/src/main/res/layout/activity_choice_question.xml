@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_search_xzt_question"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="请输入问题关键字"
+            android:layout_margin="5dp"
+            android:paddingLeft="5dp"/>
+
+        <ImageView
+            android:id="@+id/iv_search_xzt_question"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/search_little"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_search_xzt_answer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="请输入选项关键字"/>
+
+        <ImageView
+            android:id="@+id/iv_search_xzt_answer"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/search_little"
+            android:scaleType="centerInside"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="题库中没有查到数据"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/bt_insert_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="录入新题"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_xzt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </ListView>
+
+</LinearLayout>
